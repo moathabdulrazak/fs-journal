@@ -38,13 +38,13 @@ Cascading Style Sheets
 ```
 <!-- enter you answer in the space below -->
 ```
-
+selector, value and property
 ```
 
 **7.** What property would you change if you wanted to make a font **Bold**?
 <!-- enter you answer in the space below -->
 ```
-Change the font-weight to bold
+Change the font-weight to bold or in html the <b> tag
 ```
 
 **8.** In what tag does the majority of your code belong?
@@ -56,17 +56,17 @@ The <body> tag
 **9.** What three tags can be used to make lists (not list items)?
 <!-- enter you answer in the space below -->
 ```
-
+ul, ol, dl
 ```
 
 **10.** Define the display `:flex property:`
 <!-- enter you answer in the space below -->
 ```
-
+it sets the flexible length on d-flex items
 ```
 
 **11.** What `CSS` properties affect the size of a box model?
 <!-- enter you answer in the space below -->
 ```
-
+width, height, margin, padding, margin and border
 ```
