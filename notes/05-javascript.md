@@ -218,3 +218,13 @@ strings snap in together
 innertext can also be innerhtml 
 
 
+for.each loops
+if (blank.quanity > 0)
+it can be added to cart
+since it checks the value.
+
+
+
+line height changes space between lines. css
+
+queryselector works like a css target, you can target a css element.
