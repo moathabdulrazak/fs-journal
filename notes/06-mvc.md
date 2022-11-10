@@ -1,5 +1,8 @@
 # MVC
 
+
+<!-- blank keyword is function -->
+
 mvc group code that does certain things togather
 
 view is html, dom
@@ -124,3 +127,258 @@ not passing a function so no(), inovked right away.
 <!-- make a controller and service -->
 
 <!-- create a controller or service, add in app.js -->
+
+
+
+
+create a model, step 1. set up your model.consttrcutor is building the class or model.
+(model data in construcor)
+after model import it to the appstate
+
+
+step 3, build out a template for our model
+
+
+step 4, place template on model.
+
+get cardTemplate(){
+  return `template in here`
+}
+
+step 5, create a controller with a console log in the constructor
+step 6, register controller in the app.js and get your console log om your web page.
+
+in controller
+first step in controller always log
+
+in constrcuor function runs on page load in controller
+
+in app blankController = new blanksController()
+
+anything outside the controller user cannot access
+
+_drawBlank(){
+  let template = ``
+  appState.blank.forEach(c => template += blankTemplate)
+  setHtml ("id", template or value)
+  }
+
+  in constructor call it, _drawBlank()
+
+  <!-- appState.on will call a method, everytime in the appstate something changes. -->
+
+  <!-- just drawing it regularly would draw it automaticlly on page -->
+
+  step 7 update our template with fields from the class
+
+
+
+  <!-- this refers to the instance of the class -->
+
+
+delete button
+  onclick="app.blankController.removeBlank('this.id')" title="remove blank" in html
+
+  in controller 
+
+  <!-- removeBlank(){
+ pop.toast("message", "info") (make sure to import)
+  } -->
+ async removeBlanl(){
+    if(pop.comfrim)('are you sure want to remove blank){
+      blanksService.removeBlank() hit control peroid then it will declare remove car
+    }
+  }
+<!-- async click on button for code to move on
+only use await/async for pop.confrim this week  -->
+
+<!-- sweetalert.com  cool utility to use-->
+  utility pop, makes it easier to use sweetalert utilty
+
+step 8 when you need to change data in the appstae, write out your service
+
+  in service
+
+  removeBlank(blankId){
+    <!-- give me a new array of blanks where all of blanks id's do not match  the id i passed down-->
+    let filteredArray = appState.blank.filiter(c => c.id ! =carId)
+   appState.blank = filitredArray
+  }
+
+
+
+  in model in the construcotr
+  create an id 
+  this.id = generateid()
+  <!-- in utility, import the generate id -->
+  <!-- generateid generates random string, on page loads. asign uniqe ids to each data point -->
+
+
+  pass id in remove button
+
+
+appstate.on('cars', _drawCars)
+
+ita better to draw in constrctuor as appstate, for less code
+
+
+<!-- forms -->
+required in input field
+in html
+form onsubmit"app.blankController.createBlank"
+first step to build a form
+div
+inside div
+create a form
+go to bootstrap grab a form
+paste
+change type 
+label for would be make
+placeholder would be make
+inside label make
+change form elements to match (this.blank)
+change price type to number
+button submit
+in html add name ="make"
+add in all input feields after the placeholder
+<!-- name property match something in model -->
+button type reset, resets the form
+button type submit, submits
+for image change type to url
+
+floating textareas for description
+
+
+<!-- m-auto moves to center of page -->
+
+in controller
+
+
+createBlank(){
+  <!-- allows it to not fresh page -->
+  window.event.preventDefault()
+  <!-- targets the form -->
+  let form = window.event.target
+  <!-- grabs form data -->
+let formData = getFormData(form)
+blankService.createBlank(formData)
+}
+
+<!-- form handler utlity.  -->
+
+
+in service
+
+createBlank(FormData){
+  let newBlank = new Blank (formData) (make sure to import)
+  appState.blanks = [..appState.blanks, newBlank]
+}
+
+
+
+details modals
+
+
+
+modal is hidden until needed, put underneaht the footer.
+
+
+
+
+
+
+
+need data-bs-toggle and data-bs-target
+
+go into model paste in button class
+
+
+add onclick in button 
+onclick= "app.blanksController.setActiveBlank('${this.id})"
+
+
+active
+
+in controller
+
+setActiveBlank(blankId){
+  blanksService.setActiveBlank(blankId)
+}
+
+
+
+in service
+setActiveBlank(blankId){
+  let foundBlank = appState.blanks.find(b => c.id == blankId)
+  appState.ActiveBlank = foundBlank
+}
+
+
+to setActive
+in appState
+import singular model/blank
+activeBlank = null
+
+controller
+write a function -drawActiveBlank
+in constructor draw _drawActiveBlank
+
+
+
+in model we set a new template
+
+in modal hard code in html to use in template
+
+
+getActiveBlank(){
+  return`template`
+}
+
+throw id in modal content
+
+
+controller 
+function _drawActiveBlank(){
+  setHTML("id", appState.ActiveBlank.ActiveBlankTemplate)
+}
+
+
+
+go into model
+this.createdAt = new Date()
+in string inerpaltion
+this.createdAt.toLocalDalestring
+
+
+
+
+local storage
+
+in  service
+createBlank function
+and removeBlank
+saveState('blank', appstate.blank)
+
+
+in appstate
+
+blank = loadState("blank", [blank(array)])
+
+<!-- store utility save state and load state -->
+
+in our save state we need to give it a (key (id)   )
+
+
+
+
+in constructor keep the DrawHouse function
+till you dont want it to draw right as page starts
+
+
+
+in model
+
+static GetBlankFormTemplate(){
+return ``
+}
+
