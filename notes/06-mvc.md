@@ -382,3 +382,30 @@ static GetBlankFormTemplate(){
 return ``
 }
 
+
+
+model
+constructor (data)
+this.blank = data.blank
+this.date = data.date || new Date()
+<!-- creates date that happens when it was  submitted -->
+
+after model create instance in appstate
+
+<!-- build out modal, and test data. -->
+
+
+get computeBlank(){
+  return this.blank.slice(0, 15) + '...'
+}
+
+
+forms alwyas need to have a input, id and name
+
+map()
+<!-- map creates a copy of the array with actions performed on it. -->
+
+
+
+
+<!-- make an active template -->
