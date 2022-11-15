@@ -409,3 +409,92 @@ map()
 
 
 <!-- make an active template -->
+
+
+
+
+
+
+
+
+<!-- asynchronous code -->
+
+
+wait allows it for useer to makke a descison in the aycync
+
+
+await and aysnc pause code till we get result from user
+
+
+promise makes sure that something comes back
+
+api = application progamming interface
+
+
+taking request and dumb out data
+
+
+in console, network shows you what the api data has
+
+api gets you JSON 
+
+dont start with model
+
+if we didnt create the data, dont start with the model
+
+
+
+app.js drop the controller
+
+start with controller
+async getBlank(){
+await blanksService.getblank()
+}
+
+
+<!-- fetch, grabs in a url -->
+drop api url as a string
+<!-- http.cat -->
+
+
+const data = await reponse.json()
+fetch method
+
+
+appstate
+cards = []
+since the data doesnt exist since we didnt create the data
+so its an empty array
+
+
+in html
+script axios
+
+in service 
+const response = await axios.get('api url in here')
+
+<!-- axios is not here when writing the code, but here after its loaded by html
+dont load in service. its loaded in htmls -->
+
+
+
+in controller
+
+function draw cards()
+let cards = appstate.cards
+let template = ''
+cards.foreach(c => template += c.name)
+sethtml('app', tem[late])
+
+appState.on('cards', draw cards)
+
+
+to convert data 
+use map (cardData => new card cardData)
+
+
+try catch
+
+try doing this thing
+if not catch error 
+
