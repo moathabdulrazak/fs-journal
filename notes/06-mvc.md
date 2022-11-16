@@ -498,3 +498,74 @@ try catch
 try doing this thing
 if not catch error 
 
+
+<!-- \https://bcw-sandbox.herokuapp.com/ -->
+
+to grab data
+const res = await axios.get(' api url')
+log ('[GOT BLANK]', res.data)
+appState.cars = res.data.map(c => new Model(c))
+
+
+to draw
+function _drawBlank(){
+  const blank = appstate.blank
+  let template = ''
+  blank.foreach(c=> template += blank.listTemplate)
+  setHTML('app', template)
+}
+
+construcotr (){
+  appstte.on('blank' _drawBlank)
+  this.Getblank
+}
+
+async createBlanl(){
+  window.event.preventDeafault()
+  const form = window.event.target
+  let carData = getFOrmData(form)
+  await blanksService.createBlank(formData)
+}
+\
+
+in service
+
+async createBlank (blankDATA){
+const res = await axios.post("api url", body which is blankData)
+}
+
+post, the things that tells the database to sned objects in the same.
+
+
+to remove
+
+removeBlank(id){
+  const res = await axios.delete("api url" + id)
+  appState.blank = appstate.blank.filter(c=> c.id != id)
+}
+
+
+setActive(id){
+blanksService.setActive(id)
+}
+activeBlank  = null in appState
+
+in service
+
+setActive(id){
+  let blanl = appstate.balnk.find(c => c.id == id)
+  appstate.activeBlank = active blanl
+}
+
+
+
+
+
+async editBlank(id){
+
+}
+
+
+axios. put updates
+
+
