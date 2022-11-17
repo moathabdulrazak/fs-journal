@@ -569,3 +569,18 @@ async editBlank(id){
 axios. put updates
 
 
+anything with user, in api url you need to add your name
+
+const Api = axios.create({
+  baseURl:
+
+})
+
+
+get you need to have 
+
+
+static, exists on the class
+
+
+create a new axios service
