@@ -584,3 +584,39 @@ static, exists on the class
 
 
 create a new axios service
+
+
+
+
+start with making an axios service to call your apis
+
+export const blankAPi = new axios.create({
+  baseUrl: ''
+  timeout 8000
+  params: {pass in a paramter such as api_key and then "key in here"}
+})
+
+
+then go into controller
+
+async GetBlank(){
+  await send to service
+}
+
+in service
+
+async getBlank(){
+  const res=await BlankAPi.get('')
+  log  the res
+}
+
+back in controller 
+call the async getBlank in the constructor
+
+then go to model
+
+to create the model for it to draw
+
+in the model constrcutor follow the api model
+
+build the model in the html
