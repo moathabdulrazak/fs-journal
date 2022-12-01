@@ -71,3 +71,46 @@ cd
 
 you need next at end of your try and catch.
 read you error message (next)
+
+
+timestaps enables virutals 
+
+
+
+.use is middleware
+
+use.auth0provider.getUthorizeduserinfo)
+
+
+looks for a token, it goes through auth api
+
+
+
+
+in ppostman auth tab bearer token to attach the token from auth
+
+
+
+
+
+virutal 
+
+localfield: what on this schema to look at
+
+forignfield: what on the refernce model to look at
+
+ref: what model to look at.
+
+
+populate attachs the virtual in the schema by name
+
+
+
+
+
+
+
+
+
+
+
