@@ -110,6 +110,56 @@ populate attachs the virtual in the schema by name
 
 
 
+always start with .env 
+
+
+second: .env.js
+
+
+<!-- one person env for the group -->
+
+
+setting up a model
+for the "user"
+
+second step register model in context
+
+
+third make a controller & service 
+
+
+
+<!-- req.body."userId" = req.userInfo.id -->
+
+
+
+<!-- npm i to find the .env file -->
+
+
+to use scss
+
+in terminal npm i bootsrap
+
+npm run sass
+
+img fluid forumla 
+<!-- 
+img fluid in scss
+width 100%
+height auto;
+object-fit: cover
+ -->
+ 
+
+ <!-- stickybottem
+ makes a button stick as you scroll from the bottem -->
+
+
+
+
+
+
+
 
 
 
