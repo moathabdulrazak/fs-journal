@@ -74,3 +74,87 @@ onmounted(()=>)
 onMounted is the vue lifecycle hook that fires when a component is loaded to the dom
 simllar to constructor()
 
+
+
+
+mpa = mulitpage application
+spa = single page application 
+
+
+
+first make a model
+
+second make an axios service for the api
+<!-- export const blankAPI = axios.create({
+  baseURL:
+  timeout:
+  params:{
+    api_key:
+  }
+}) -->
+
+third make a service
+
+
+instead of loading in controller
+you can load it in a page
+
+in setup
+<!-- when awating functions try to keep the async part out of an on mounted -->
+ <!-- onMounted(()=>{
+getBlank
+ })
+ async function getBlank(){
+  try 
+await blanksServivce.getBLAnk
+  catch
+ } -->
+
+
+ then  in appState make a place to store your data
+
+ then in homepage 
+
+ compute the appstate
+  
+
+
+
+
+
+  paginaation 
+
+  make a secetion
+
+div btn previous
+div btn next
+
+in homepage
+in return
+async changePage(){
+  awaait  blanksService.changePage(2)
+
+}
+
+in appstate
+page: 1
+
+
+props are like a method that your passing an arugement throguh it
+
+
+props allow you to pass elements throguh diffrentt pages
+
+:blank=''
+
+v-model="" what your tying into it
+
+
+
+
+
+
+
+
+
+
