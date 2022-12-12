@@ -151,6 +151,18 @@ v-model="" what your tying into it
 
 
 
+always route the new page that you have created
+
+<!-- if using the ref in setup, you must access the value -->
+
+<!-- reactive is meant for objective -->
+
+
+const router = useRouter()
+
+
+note emit is black magic and should only be used in very rare cases aka not friday
+because data goes downwards not upwards
 
 
 
@@ -158,3 +170,155 @@ v-model="" what your tying into it
 
 
 
+
+always have inside setup the prop..
+EX: setup(props) {
+
+
+
+condtionals
+
+being able to delete if your the creator
+
+
+drawing data to the page
+
+being able to post
+
+account info(username and logo)
+
+on the component
+
+
+using sandbox
+
+
+change env.js
+ to codeworks
+
+
+ run npm i
+
+
+making sure account comes back @200
+
+
+get the data in services in console log
+
+
+using an api that you didnt write make a model
+
+
+
+get raw data to draw on page
+
+ v-for, for each "thing" in collection
+
+when making the card
+use props
+  props:{
+type: model name
+required
+ }
+ in homePage
+<prop name : prop name = "random lettter">
+
+
+ to use computed in css
+
+.class name{
+  the styles you want
+  by calling it in a 
+  backgroundImg: v-bind(coverImg)
+  v-bind binds  a property injects
+
+}
+
+setup(props)
+in return write a compute
+coverImg; computed(()=> 'url'(${${props.model.theimg}))
+
+
+
+
+make a profilePage
+
+then make a rout
+path: '/profile/profileId',
+name: '/profile',
+component: loadPage('profilePage')
+<!-- make sure to store id in path -->
+
+
+in projectCard
+
+router-link :to="{name: 'profile', params: {profileId: projects.creator.id} }"
+
+in profilePage
+setup(){
+  const route = useRoute()
+  <!-- make a profile service -->
+  in service 
+  async function getProfileById(route.parms.profileId){
+try{
+}
+
+  }
+}
+make an onMoubted(() =>{
+
+})
+
+
+after getting the data
+store in appState
+
+activeProfile = null
+
+
+add additinoal propeirtes in account model for the active profile
+
+
+in account service
+
+appstate.account = new Account(res.data)
+
+v-if="profile", render on page if theres one
+
+
+
+async function getProjectsByCreatorId(){
+await projectService.getProjectsByCreatorId(route.params.profileId)
+}
+
+in services 
+
+async function getProjectsByCreatorId(creatorid){
+const res = await api.get('api/projects', {params: {creatorId: creatorId} })
+<!-- line above makes it like a query -->
+}
+
+
+in login component
+
+
+make a new router-LINK - 
+for profile page
+
+
+
+
+
+<!-- before enter: authGuard
+check if their logged in
+if not
+prompots log in page -->
+
+
+
+const editable = ref({})
+watchEffect(()=> {
+  if(appState.account,id){
+    editable.value= { ...appState.account}
+  }
+})
