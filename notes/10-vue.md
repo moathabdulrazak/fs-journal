@@ -322,3 +322,64 @@ watchEffect(()=> {
     editable.value= { ...appState.account}
   }
 })
+
+
+
+
+
+
+
+
+
+
+one to mmany
+
+albums and creator
+
+
+one to many
+
+pictures in an album
+
+many to many
+
+collaberators
+
+
+
+post man tests
+
+
+
+bcw crate fullstack vue!!!
+
+
+client on 8080
+server on 3000
+
+
+first step fill out the .env
+
+
+make a model first 
+
+
+export const BlankSchema = new Schema({
+
+})
+
+enum: it has to be one of these values
+
+dont change post man things
+only the add token
+
+
+
+for one id 
+
+
+locall/api/blank/{{blankId}}
+
+
+
+post, get, findbyid, archrive or delete 
