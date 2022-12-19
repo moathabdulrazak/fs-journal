@@ -383,3 +383,56 @@ locall/api/blank/{{blankId}}
 
 
 post, get, findbyid, archrive or delete 
+
+
+
+
+npm in server and client folder
+
+
+cd in client 
+
+
+to filter 
+
+
+in the computed 
+
+if{filterBy.value ==''}
+return appsate.blank
+
+
+
+else{
+  return Appstate.blank.filter(a => a.catogaery == filterBy.value )
+}
+
+
+account is personal
+
+
+profile is everyone else.
+
+
+
+link component in homepage
+
+or inject it somewhere
+
+
+modal content
+<slot><slot>
+
+
+
+blank component 
+inject component in here
+blank component
+
+
+
+router moves people through pages
+
+
+in auth0 services, add in the function you want to happen before user is logged in
+
